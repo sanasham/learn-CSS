@@ -1,0 +1,29 @@
+.parent{
+    color: red;
+    background-color: greenyellow;
+}
+.one{
+    width: 150px;
+    height: 150px;
+    background-color: pink ; color: green;
+    position:relative;
+    top:30px
+}
+.two {
+    width: 150px;
+        height: 150px;
+        background-color: rgb(255, 235, 192);
+    color:brown;
+}
+.three{
+    width: 150px;
+        height: 150px;
+        background-color: rgb(103, 156, 132);
+    color:red
+}
+.four{
+    width: 150px;
+        height: 150px;
+        background-color: rgb(29, 20, 108);
+    color: yellowgreen
+}
