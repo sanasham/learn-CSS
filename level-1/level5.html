@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      nav {
+        padding: 5px;
+      }
+      nav a {
+        text-decoration: none;
+        margin-left: 65px;
+        padding: 5px;
+      }
+      header {
+        background-color: aquamarine;
+        height: 30px;
+      }
+      #maindiv {
+        background-color: green;
+        border-radius: 50%;
+        width: 75px;
+        height: 75px;
+      }
+
+      .box {
+        height: 100px;
+        width: 100px;
+        margin: 5px;
+        display: inline-block;
+        background-color: palevioletred;
+      }
+      #container {
+        margin: 2px;
+        background-color: cadetblue;
+      }
+
+      #box4 {
+        right: 20px;
+        position: fixed;
+      }
+      #box2 {
+        z-index: 2;
+        position: absolute;
+        left: 20px;
+      }
+      footer {
+        position: fixed;
+        bottom: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Help</a>
+      </nav>
+    </header>
+    <main>
+      <div id="maindiv"></div>
+      <div id="container">
+        <div id="box1" class="box">Box 1</div>
+        <div id="box2" class="box">Box 2</div>
+        <div id="box3" class="box">Box 3</div>
+      </div>
+      <div id="box4" class="box">Box 3</div>
+    </main>
+
+    <footer>
+      <div>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam,
+        assumenda facilis possimus quidem quaerat praesentium similique sapiente
+        laudantium nisi quisquam hic? Tempora sunt quaerat ut dolorum explicabo!
+        Tempore, nulla eveniet.
+      </div>
+    </footer>
+  </body>
+</html>
