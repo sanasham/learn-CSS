@@ -35,7 +35,7 @@ div{
   padding: 0;
   margin: 0;
 }
-ul {
+/* ul {
   background-color: pink;
   display: flex;
   justify-content: space-evenly;
@@ -63,4 +63,34 @@ li {
     height: 100px;
    background-color: rgb(221, 207, 207);
   
+} */
+
+div{
+    width: 400px;
+    height: 400px;
+    background-color: cadetblue;
 }
+@media (max-width: 300px) {
+   div {
+    background-color: green;
+    }
+    
+}
+@media (min-width: 300px) and (max-width:400px) {
+    div {
+     background-color: pink;
+     }
+     
+ }
+ @media (min-width: 400px) and (max-width:600px) {
+    div {
+     background-color: red;
+     }
+     
+ }
+ @media (min-width: 600px)  {
+    div {
+     background-color: blue;
+     }
+     
+ }
