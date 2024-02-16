@@ -1,9 +1,10 @@
-#box{
-   background-color: blue;
+h1{
+    text-align: center;
 }
-.heading{
-    color:red
+#outer{
+font-size: 25px;
 }
-button{
-    background-color: green;
+
+#inner{
+    font-size: 10px;
 }
