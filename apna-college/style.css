@@ -65,7 +65,7 @@ li {
   
 } */
 
-div{
+/* div{
     width: 400px;
     height: 400px;
     background-color: cadetblue;
@@ -93,4 +93,19 @@ div{
      background-color: blue;
      }
      
- }
+ } */
+
+ div{
+    width: 200px;
+    height: 200px;
+    background-color: cadetblue;
+
+}
+div:hover{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    color: white;
+    transform: rotate(45deg);
+}
+
