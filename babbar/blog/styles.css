@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100%;
+  width: 100%;
+}
+.container {
+  max-width: 90vw;
+  padding: 2rem 1rem;
+  margin: 0 auto;
+  background-color: rgb(197, 121, 174);
+}
+.header-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.8rem;
+}
+.header-container h2 {
+  font-size: larger;
+}
+.main_container {
+}
