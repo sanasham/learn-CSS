@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  animation-name: colorChange;
+  animation-duration: 5s;
+  animation-delay: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  /* animation-fill-mode: both; */
+
+  /* shorthand Property */
+  /* animation: colorChange 5s timing-function delay iteration-count direction fill-mode; */
+}
+
+@keyframes colorChange {
+  0% {
+    background-color: rgb(255, 0, 179);
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    background-color: gold;
+    left: 500px;
+    top: 0px;
+  }
+  50% {
+    background-color: blue;
+    left: 500px;
+    top: 500px;
+  }
+  75% {
+    background-color: pink;
+    left: 0px;
+    top: 500px;
+  }
+  100% {
+    background-color: green;
+    left: 0px;
+    top: 0px;
+  }
+}
+
+.truck {
+  position: fixed;
+  bottom: 0px;
+  left: -200px;
+  animation: truckLeftToRight 10s linear 0s infinite;
+}
+.wheel-outer {
+  display: flex;
+  justify-content: space-around;
+  margin-top: -10px;
+}
+.wheel-outer img {
+  animation: wheelRotate 10s linear 0s infinite;
+}
+
+@keyframes truckLeftToRight {
+  0% {
+    left: -200px;
+  }
+  100% {
+    left: 120%;
+  }
+}
+
+@keyframes wheelRotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+button {
+  display: table;
+  margin: 40px 400px 40px auto;
+  background-color: white;
+  border-radius: 15px;
+  color: black;
+  font-size: 30px;
+  padding: 15px 25px;
+  border: 1px solid brown;
+  position: relative;
+}
+.wave {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  background-color: rgb(180, 101, 211);
+  left: 0px;
+  top: 0px;
+  opacity: 0;
+  animation: waveEffect 10s linear 0s infinite;
+}
+@keyframes waveEffect {
+  0% {
+    transform: scale(1, 1);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.5, 1.5);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1, 1);
+    opacity: 0;
+  }
+}
